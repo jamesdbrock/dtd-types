@@ -1,5 +1,5 @@
 name: dtd-types
-version: 0.3.0.1
+version: 0.4.0.0
 synopsis: Basic types for representing XML DTDs
 description:
   This package provides types to represent an XML Document Type
@@ -33,7 +33,6 @@ maintainer: gale@sefer.org
 category: Data, Text, XML
 build-type: Simple
 cabal-version: >=1.6
-category: Text, XML
 stability: experimental
 bug-reports: mailto:gale@sefer.org
 homepage: http://projects.haskell.org/dtd/
@@ -44,9 +43,9 @@ source-repository head
 
 library
   build-depends:
-      base >=3 && < 5
+      base >=4.7
     , text
-    , xml-types ==0.3.*
+    , xml-types
 
   exposed-modules:
     Data.XML.DTD.Types
